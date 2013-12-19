@@ -3,7 +3,7 @@ mappaeventigdocs
 
 Mappatura eventi tramite spreadsheet Google e interfacciamento su OpenStreetMap
 
-1) registrarsi su google (sigh)\n
+1) registrarsi su google (sigh) <br>
 2) creare sulla falsa riga di https://docs.google.com/spreadsheet/ccc?key=0AoZ9HGSxyqvydGI1M29qNU9XcUV6NThTd3RxLU5CcHc&usp=drive_web#gid=0\n
 un proprio file eventi. è importante non inserire , (virgole), / o # nelle varie celle e incollare le coordinate nei campi LAT e LON nella forma 40.xxxx e 16.yyyy (esempio) in formato testo. per fare questo
 consiglio di cliccare la cella, mettere nella sezione formula in alto a sinistra prima il carattere ' (apostrofo) e poi la coordinata. Es '40.444444 \n

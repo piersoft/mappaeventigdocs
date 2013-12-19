@@ -52,7 +52,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 		<script src="http://joker-x.github.io/Leaflet.geoCSV/lib/leaflet.markercluster-src.js"></script>
 
 		<!-- GeoCSV: https://github.com/joker-x/Leaflet.geoCSV -->
-		<script src="http://joker-x.github.io/Leaflet.geoCSV/lib/leaflet.geocsv-src.js"></script>
+		<script src="leaflet.geocsv-src.js"></script>
 
 		<!-- jQuery 1.8.3: http://jquery.com/ -->
 		<script src="http://joker-x.github.io/Leaflet.geoCSV/lib/jquery.js"></script>

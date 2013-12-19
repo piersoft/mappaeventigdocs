@@ -36,7 +36,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 <html lang="it">
 	<head>
 		<meta charset="utf-8">
-		<title>Elenco eventi  2013 fonte OpenData Matera</title>
+		<title>Elenco eventi 2013 fonte OpenData Matera</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -52,7 +52,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 		<script src="http://joker-x.github.io/Leaflet.geoCSV/lib/leaflet.markercluster-src.js"></script>
 
 		<!-- GeoCSV: https://github.com/joker-x/Leaflet.geoCSV -->
-		<script src="leaflet.geocsv-src2.js"></script>
+		<script src="http://joker-x.github.io/Leaflet.geoCSV/lib/leaflet.geocsv-src.js"></script>
 
 		<!-- jQuery 1.8.3: http://jquery.com/ -->
 		<script src="http://joker-x.github.io/Leaflet.geoCSV/lib/jquery.js"></script>

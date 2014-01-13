@@ -36,7 +36,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 <html lang="it">
 	<head>
 		<meta charset="utf-8">
-		<title>Elenco eventi fonte OpenData Matera</title>
+		<title>Elenco eventi  2013 fonte OpenData Matera</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -95,7 +95,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 			background: -moz-linear-gradient(top, #3e779d, #65a9d7);
 			background: -ms-linear-gradient(top, #3e779d, #65a9d7);
 			background: -o-linear-gradient(top, #3e779d, #65a9d7);
-			padding: 5px 5px;
+			padding: 12px 24px;
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
 			border-radius: 10px;
@@ -122,7 +122,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 position:fixed;
         left:30px;
         bottom:2px;
-	font-size: 10px;
+	font-size: 8px;
         z-index:9999;
         border-radius: 5px; 
         -moz-border-radius: 5px; 
@@ -142,8 +142,8 @@ position:fixed;
 			<button id="localizame" class="boton">Cerca evento vicino a te</button>
 		</div>
 <div id="infodiv" style="leaflet-popup-content-wrapper">
-<b>Elenco eventi Matera</b><br>
-Questa mappa è collegata ad un file condiviso sul portale OpenData del Comune, aggiornato dalla cittadinanza.</br>Per poter modificare inviare email a opendatamt@gmail.com. Map Data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors | <a href="http://dati.comune.matera.it">OpenData Matera</a> Realizzata da @Piersoft su idea di Enzo Scasciamacchia</div>
+<b>Elenco eventi 2013 Matera</b><br>
+Questa mappa è collegata ad un file condiviso sul portale OpenData del Comune, aggiornato dalla cittadinanza. Per poter modificare inviare email a opendatamt@gmail.com. Map Data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors | <a href="http://dati.comune.matera.it">OpenData Matera</a> Realizzata da @Piersoft</div>
 
 <script>
 
@@ -156,8 +156,10 @@ L.tileLayer('http://tile.osm.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: 'M
 var bankias = L.geoCsv(null, {
 	onEachFeature: function (feature, layer) {
 		var popup = '';
-if (feature.properties.link == '') {feature.properties.link='Nessun link';}else{
-feature.properties.link='<a href="'+feature.properties.link+'">'+feature.properties.link+'</a>';}
+if (feature.properties.link == '') { feature.properties.link='Nessun link'; }
+else{
+feature.properties.link='<a href="'+feature.properties.link+'">'+feature.properties.link+'</a>';
+}
 		for (var clave in feature.properties) {
 
 			var title = bankias.getPropertyTitle(clave);
@@ -170,9 +172,9 @@ feature.properties.link='<a href="'+feature.properties.link+'">'+feature.propert
 			icon:L.icon({
 				iconUrl: 'mark.png',
 				shadowUrl: 'mark_s.png',
-				iconSize: [22,41],
-				shadowSize:   [41, 20],
-				shadowAnchor: [17, -2]
+				iconSize: [27,52],
+				shadowSize:   [52, 27],
+				shadowAnchor: [20, -2]
 			})
 		});
 	},

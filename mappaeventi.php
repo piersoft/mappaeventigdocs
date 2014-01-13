@@ -95,7 +95,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 			background: -moz-linear-gradient(top, #3e779d, #65a9d7);
 			background: -ms-linear-gradient(top, #3e779d, #65a9d7);
 			background: -o-linear-gradient(top, #3e779d, #65a9d7);
-			padding: 12px 24px;
+			padding: 5px 5px;
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
 			border-radius: 10px;

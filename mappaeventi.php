@@ -36,7 +36,7 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 <html lang="it">
 	<head>
 		<meta charset="utf-8">
-		<title>Elenco eventi 2013 fonte OpenData Matera</title>
+		<title>Elenco eventi  2013 fonte OpenData Matera</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -120,13 +120,13 @@ $output2 = passthru("sed -e 's/$search2/$replace2/g' $fileok1 > $fileok2");
 		}
 #infodiv{
 position:fixed;
-        left:2px;
+        left:30px;
         bottom:2px;
 	font-size: 10px;
         z-index:9999;
-        border-radius: 10px; 
-        -moz-border-radius: 10px; 
-        -webkit-border-radius: 10px; 
+        border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        -webkit-border-radius: 5px; 
         border: 2px solid #808080;
         background-color:#fff;
         padding:5px;
@@ -156,7 +156,9 @@ L.tileLayer('http://tile.osm.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: 'M
 var bankias = L.geoCsv(null, {
 	onEachFeature: function (feature, layer) {
 		var popup = '';
+feature.properties.link='<a href="'+feature.properties.link+'">'+feature.properties.link+'</a>';
 		for (var clave in feature.properties) {
+
 			var title = bankias.getPropertyTitle(clave);
 			popup += '<b>'+title+'</b><br />'+feature.properties[clave]+'<br /><br />';
 		}

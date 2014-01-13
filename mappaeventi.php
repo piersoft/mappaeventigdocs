@@ -143,8 +143,8 @@ position:fixed;
 		</div>
 <div id="infodiv" style="leaflet-popup-content-wrapper">
 <b>Elenco eventi 2013 Matera</b><br>
-Questa mappa è collegata ad un file condiviso sul portale OpenData del Comune, aggiornato dalla cittadinanza. Per poter modificare inviare email a opendatamt@gmail.com. Map Data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors | <a href="http://dati.comune.matera.it">OpenData Matera</a> Realizzata da @Piersoft</div>
-
+Questa mappa è collegata ad un file condiviso sul portale OpenData del Comune, aggiornato dalla cittadinanza. Per poter modificare inviare email a opendatamt@gmail.com. Map Data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors | <a href="http://dati.comune.matera.it">OpenData Matera</a> Realizzata da @Piersoft |  Pin by marta michalowska from The Noun Project CC-A
+</div>
 <script>
 
 //;$(function() {
@@ -170,11 +170,11 @@ feature.properties.link='<a href="'+feature.properties.link+'">'+feature.propert
 	pointToLayer: function (feature, latlng) {
 		return L.marker(latlng, {
 			icon:L.icon({
-				iconUrl: 'mark.png',
+				iconUrl: 'icon_7788.png',
 				shadowUrl: 'mark_s.png',
-				iconSize: [27,52],
-				shadowSize:   [52, 27],
-				shadowAnchor: [20, -2]
+				iconSize: [30,30],
+				shadowSize:   [40, 20],
+				shadowAnchor: [20, 4]
 			})
 		});
 	},

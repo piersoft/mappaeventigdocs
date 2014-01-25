@@ -14,4 +14,6 @@ cioè sostituendo il link del punto 3) con il finale =csv al posto di =html  <br
 
 Finito ;-) 
 
-Esempio: http://www.apposta.biz/prove/mappaeventi.php
+Esempio: http://dati.comune.matera.it/blog/mappe/eventi/
+
+Licenza AGPL
